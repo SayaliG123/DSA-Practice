@@ -58,7 +58,7 @@ public class Subsetbyitretion {
 				start=end+1;
 				
 			}
-			end=outer.size();
+			end=outer.size()-1;
 			int n=outer.size();
 			for(int j=start;j<n;j++)
 			{
