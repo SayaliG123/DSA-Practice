@@ -1,6 +1,6 @@
 package stringRecursion;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 //for finding all subsequence of array(32)
 
 public class SubSeq {
