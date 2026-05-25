@@ -41,6 +41,9 @@ public class Allpath {
 		//so we need to mark them again as unvisited
 		matrix[r][c]=true;
 	}
+	
+	
+	//here we are printing the matrix path
 	static void pathallprint(String p, boolean [][] matrix,int r,int c,int [][] path,int step)
 	{
 		if(r==matrix.length-1 && c==matrix[0].length-1)
