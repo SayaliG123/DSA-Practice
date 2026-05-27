@@ -1,4 +1,5 @@
 package sorting;
+//when in question there is asked for natural numbers we can use cyclic sort
 
 import java.util.Arrays;
 
