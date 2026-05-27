@@ -1,22 +1,55 @@
 package sorting;
 
+import java.util.Arrays;
+
+//here we are sorting array with help of pivot element
+//pivot is middle element
+
+
 public class Quicksort {
 
 	public static void main(String[] args) {
 		
+		int [] arr= {2,4,3,5,1};
+		
+		
+		quicksort(arr,0,arr.length-1);
+		System.out.println(Arrays.toString(arr));
 		
 
 	}
-	static void quicksort(int arr[],int n)
+	static void quicksort(int [] arr,int low,int high)
 	{
-		for(int i=0;i<n;i++)
+		int s=low;
+		int e=high;
+		int mid=s+(e-s)/2;
+		int pivot=arr[mid];
+		if(low>=high)
 		{
-			if(!(arr[i]==i+1))
+			return;
+		}
+		while(s<=e)
+		{
+			while(arr[s]<pivot)
 			{
-				int temp=arr[i];
-				arr[i]=i+1
+				s++;
+			}
+			while(arr[e]>pivot)
+			{
+				e--;
+			}
+			if(s<=e)
+			{
+				int temp=arr[s];
+				arr[s]=arr[e];
+				arr[e]=temp;
+				s++;
+				e--;
+						
 			}
 		}
+		quicksort(arr,low,e);
+		quicksort(arr,s,high);
 	}
 
 }
