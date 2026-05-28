@@ -9,7 +9,7 @@ public class Counting_occur {
 		System.out.println("enter the string ");
 		Scanner input=new Scanner(System.in);
 		int n = input.nextInt();
-		System.out.println("enter a number to seach");
+		System.out.println("enter a number to search");
 		int a=input.nextInt();
 		int count =0;
 		
