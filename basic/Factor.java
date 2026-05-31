@@ -1,4 +1,5 @@
 package basic;
+//just to find out the factors of a number
 
 public class Factor {
 
