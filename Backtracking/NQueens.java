@@ -1,5 +1,5 @@
 package Backtracking;
-//resolve
+//resolve again difficult
 //here we are placing the  N queens on nXn table where that cannot cancel each other
 
 public class NQueens {
